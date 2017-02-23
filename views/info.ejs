@@ -1,0 +1,31 @@
+<% layout('/public/layout') %>
+
+<div class="row">
+
+
+
+  <div class="container">
+    <h2>Informacion Pago</h2>
+    <p>Informacion Pago Cuatrimestral Unapec-Fundapect</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre Estudiante</th>
+          <th>Matricula</th>
+          <th>Tipo Estudio</th>
+          <th>Periodo Estudio</th>
+          <th>Monto</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= student.student.nameLastName%></td>
+          <td><%= student.studentid%></td>
+          <td><%= student.academic_program.description %></td>
+          <td><%= student.academic_period%></td>
+          <td><%= student.amount%></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
